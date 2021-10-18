@@ -1,0 +1,22 @@
+{{!-- <table>
+
+        {{#each data}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.link}}</td>
+            </tr>
+        {{/each}}
+
+</table> --}}
+{{#each data}}
+<div class="card col-lg-4" style="width: 18rem;">
+  <br>
+  <img class="card-img-top" src={{this.image}} alt="Card image cap">
+  <div class="card-body">
+    <h3 class="card-text">{{this.name}}</h5>
+    <p class="card-text">{{this.description}}</p>
+    <a href={{this.link}} class="btn btn-primary">Đi tới khoá học</a>
+  </div>
+</div>
+{{/each}}
