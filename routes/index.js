@@ -15,7 +15,6 @@ con.connect(function (err) {
   //Select only "name" and "address" from "customers":
   con.query("SELECT * FROM courses", function (err, result, fields) {
     if (err) throw err;
-    console.log(result[0].name);
     /* GET home page. */
     router.get('/', function (req, res, next) {
       res.render('index',{data:result});
